@@ -1,0 +1,3 @@
+mutation LikeOrUnlikeComment($commentId: String!){
+  likeOrUnlikeComment(commentId: $commentId)
+}

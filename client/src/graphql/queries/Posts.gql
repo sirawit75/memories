@@ -1,0 +1,9 @@
+query Posts($curPage: Float!, $perPage: Float!){
+  posts(curPage: $curPage, perPage: $perPage) {
+   hasMore
+   posts{
+    ...PostResponse
+   }
+   nextPage
+  }
+}

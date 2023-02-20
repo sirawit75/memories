@@ -1,0 +1,14 @@
+fragment User on User {
+  id
+  username
+  createdAt
+  likePost
+  commentId
+  likeCommentId
+  # likePost {
+  #   id
+  # }
+  # commentPost {
+  #   id
+  # }
+}

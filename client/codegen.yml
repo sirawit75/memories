@@ -1,0 +1,10 @@
+schema: "http://127.0.0.1:4000/graphql"
+documents: "./src/graphql/**/*.gql"
+generates:
+  src/generated/generated-types.ts:
+    config:
+      withHooks: true
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql

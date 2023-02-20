@@ -1,0 +1,5 @@
+mutation CreatePost($imageUrl: [String!]!,  $title: String!) {
+  createPost(imageUrl: $imageUrl, title: $title) {
+    ...PostResponse
+  }
+}

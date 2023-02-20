@@ -1,0 +1,9 @@
+fragment UserResponse on UserResponse{
+    errors {
+      ...Errors
+    }
+    user {
+      ...User
+    }
+    accessToken
+}

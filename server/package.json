@@ -1,0 +1,47 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "npm rum build && node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "jest --config jest.config.ts ./__test__/resolvers --runInBand --setupFiles dotenv/config"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@faker-js/faker": "^7.6.0",
+    "@jest/types": "^29.3.1",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/jest": "^29.2.4",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.11.17",
+    "babel-jest": "^29.3.1",
+    "faker": "^6.6.6",
+    "jest": "^29.3.1",
+    "mongodb-memory-server": "^8.10.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^9.13.1",
+    "apollo-server-express": "^3.11.1",
+    "argon2": "^0.30.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-check-expiration": "^1.0.5",
+    "mongoose": "^6.7.3",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  }
+}

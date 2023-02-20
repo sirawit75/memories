@@ -1,0 +1,3 @@
+mutation DeleteUser($deletedUserId: String!){
+  deleteUser(deletedUserId: $deletedUserId)
+}

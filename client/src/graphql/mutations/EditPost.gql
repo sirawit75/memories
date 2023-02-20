@@ -1,0 +1,5 @@
+mutation EditPost($text: String!, $postId: String!){
+  editPost(text: $text, postId: $postId) {
+    ...PostResponse
+  }
+}

@@ -1,0 +1,1 @@
+export const warning = "Only Bob can create posts!";

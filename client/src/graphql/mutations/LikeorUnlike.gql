@@ -1,0 +1,3 @@
+mutation LikeOrUnlike($postId: String!){
+  likeOrUnlike(postId: $postId)
+}

@@ -1,0 +1,11 @@
+fragment PostResponse on Post {
+  allComments 
+  createdAt
+  id
+  title
+  likeUser {
+    id
+    username
+  }
+  imageUrl
+}

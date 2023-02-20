@@ -1,0 +1,8 @@
+fragment CommetResponse on Comment {
+  commentAt
+  id
+  postId
+  text
+  username
+  like
+}
